@@ -1,2 +1,1 @@
-# marvellous-gherkin
-A simple day planning web application.
+# Work Day Scheduler Starter Code
