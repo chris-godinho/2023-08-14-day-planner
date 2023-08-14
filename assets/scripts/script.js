@@ -1,6 +1,26 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+
+var currentHour = dayjs().hour();
+
+// Adding current date to the top of page
+$("#currentDay").text(dayjs().format('dddd, MMMM D, YYYY'));
+
+for(i = 9; i < 18; i++) {
+  console.log($("#hour-" + i));
+  if (i < currentHour) {
+    console.log(i + " = Change to PAST");
+    $("#hour-" + i).addClass("past");
+  } else if (i === currentHour) {
+    console.log(i + " = Change to PRESENT");
+    $("#hour-" + i).addClass("present");
+  } else {
+    console.log(i + " = Change to FUTURE");
+    $("#hour-" + i).addClass("future");
+  }
+}
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
