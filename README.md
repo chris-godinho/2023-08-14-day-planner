@@ -13,7 +13,7 @@ A simple application for keeping a schedule for a work day.
 
 ## Installation
 
-No installation is necessary for this application. A live page can be accessed at <https://kristbg.github.io/2023-08-14-day-planner/>.
+No installation is necessary for this application. A live page can be accessed at <https://chris-godinho.github.io/2023-08-14-day-planner/>.
 
 ## How can I Contribute?
 
